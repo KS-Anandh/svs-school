@@ -1,0 +1,1168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: mulish;
+   
+}
+
+.homePage{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.navigation-section-a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    background-color: rgb(0, 110, 92);
+    color: white;
+}
+.navigation-section-a .social-media-icons ul{
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+}
+.navigation-section-a .location{
+    display: flex;
+    column-gap:10px;
+    align-items: center;
+    justify-content: center;
+}
+.navivation-section-b{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:15px 20px;
+}
+.navivation-section-b .logo-part{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.navivation-section-b .logo-part img{
+    width: 65px;
+    height: 65px;
+}
+.navivation-section-b .logo-part .logo-info{
+    display: flex;
+    flex-direction: column;
+    row-gap:5px;
+}
+.navivation-section-b .logo-part .logo-info h2{
+    font-size: 22px;
+}
+.navivation-section-b .info-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+   
+}
+.navivation-section-b .info-section p{
+ font-size: 14px;
+ color: rgb(116, 116, 133);
+}
+.navivation-section-b .info-section h3{
+font-size: 17px;
+}
+.navivation-section-b .info-section .child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+.navivation-section-b .info-section .child div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    
+}
+.navication-section-c{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:  rgb(0, 110, 92);
+    color: white;
+    height:45px;
+}
+.navication-section-c .mainNav{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    padding: 10px 0px;
+
+}
+.navication-section-c .mainNav li{
+   transition: all 0.2s;
+   cursor: pointer;
+   font-size: 15px;
+}
+.navication-section-c .mainNav li:hover{
+   border-bottom: 5px solid rgb(255, 255, 255);
+}
+.navication-section-c .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    border: 2px solid white;
+    padding:5px 10px;
+    border-radius: 50px;
+}
+.navication-section-c .search input{
+    width: 250px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    font-size:16px;
+}
+.navication-section-c .search input::placeholder{
+    color: white;
+}
+.navication-section-c .search input{
+ border: none;
+  background-color: inherit;
+  color: white;
+}
+.navication-section-c .AboutUs{
+    position:relative;
+}
+
+.navication-section-c .sub-dropdown{
+
+    display: none;
+    list-style: none;
+    width: 150px;
+    font-size: 14px;
+   
+}
+.navication-section-c .dropdown{
+    position: relative;
+}
+.navication-section-c .dropdown:hover > .sub-dropdown{
+    display: block;
+    position: absolute;
+    z-index:2;
+    top:25px;
+    left:-10px;
+    background-color:rgb(0, 110, 92);
+    padding: 20px 10px;
+}
+
+
+
+
+
+
+
+
+/*---------------------------- ImageSlider.css --------------------------------*/
+
+
+/* Basic height and width for the slider container */
+.keen-slider {
+  width: 100%;
+  height:520px;
+  overflow: hidden;
+}
+
+/* Common slide styling */
+.slide {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Overlay content */
+.slide-overlay {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px 35px;
+  border-radius: 10px;
+  color: white;
+  max-width: 60%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.slide-overlay p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.slide-overlay .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+     height: 100px;
+}
+.slide-overlay .buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+ height: 40px;
+ width: 150px;
+ border: none;
+ border-radius: 5px;
+ display: flex;
+ align-items: center;
+ transition: all 0.5s;
+}
+.slide-overlay .buttons button:hover{
+    transform: scale(1.1);
+
+}
+.slide-overlay .buttons .btn2{
+    background-color: rgb(0, 110, 92);
+    color: white;
+}
+
+/* Optional animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 12px 16px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+/* ----------------------------------Our Specifications--------------------------- */
+
+.ourSpecifications{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 100px;
+}
+.ourSpecifications .title{
+    margin:40px;
+    padding-top: 20px;
+  
+}
+.ourSpecifications .specifications{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+}
+.ourSpecifications .specifications .specification{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height:300px;
+    background: rgba(245, 245, 245, 0.63);
+    cursor: pointer;
+    transition:all 0.5s;
+}
+
+.specifications .specification .img{
+    width:100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 100px 100px;
+}
+.specifications .specification .info{
+    width: 100%;
+    height: 70%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   text-align: center;
+   row-gap: 10px;
+   line-height:25px;
+  
+
+}
+.specifications .specification .info p{
+ color:rgb(116, 116, 133)
+}
+
+/*--------------------------------------- ChairmanMessage ------------------------*/
+
+.ChairmanMessage{
+    display: flex;
+    padding:30px 150px;
+    margin: 30px 0px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    background-color: rgb(237, 240, 243);
+    text-align: justify;
+    
+    
+}
+.ChairmanMessage .message{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.ChairmanMessage .message p{
+    line-height: 30px;
+    color:rgb(116, 116, 133)
+}
+
+.ChairmanMessage .photo img{
+    transition: all 0.5s;
+}
+.ChairmanMessage .photo img:hover{
+    transform: scale(1.02);
+
+}
+
+/*------------------------------------------------------ footer ----------------------------------------------*/
+
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    background-color: black;
+    padding: 50px 0px;
+    cursor: pointer;
+}
+.footer .details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 350px;
+}
+.footer .details ul{
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    padding: 20px 0px;
+}
+.svsSchoolStart{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+.svsSchoolStart img{
+    width: 50px;
+}
+.footer .products,.footer .company,.footer .contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.footer h4{
+    color:rgb(179, 179, 202)
+}
+.footer h3{
+    color: rgb(206, 250, 251);
+}
+.footer p{
+    transition: all .2s; 
+    color:rgb(179, 179, 202)
+}
+.footer p:hover{
+    transform: scale(1.1);
+}
+
+/*------------------------------------------------- Academic Achivements ----------------------------------------------------------*/
+
+.academics{
+    color: black;
+}
+.academicAchivements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.academicAchivements h1{
+    padding: 30px 0px;
+}
+.academicAchivements .titleStars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-------------------------------------------- AdmissionsNow -------------------------------------------*/
+
+.AdmissionsNow{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.849);
+    font-size: 14px;
+}
+
+.AdmissionsNow .admScrolling{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   .marquee {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: 30px;
+    }
+
+    .marquee-text {
+      position: absolute;
+      white-space: nowrap;
+      animation: moveRight 30s linear infinite;
+    }
+
+    @keyframes moveRight {
+      from {
+        left: -100%;
+      }
+      to {
+        left: 100%;
+      }
+    }
+
+
+/*------------------------------------------- FacultyProfiles -------------------------------------------*/
+.facultyProfiles .title{
+    padding: 20px 0px;
+}
+.facultyProfiles{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px 10px;
+}
+.facultyProfiles .profiles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+    padding: 20px;
+}
+.facultyProfiles .profiles .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding:0px 40px;
+    row-gap: 5px;
+}
+.facultyProfiles .profiles .profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+/*--------------------------------- PageNotFound--------------------------------------*/
+
+.pageNotFound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 100%;
+  
+    padding: 50px;
+}
+.pageNotFound .pnfTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+
+    padding: 5px 10px;
+     
+}
+.pageNotFound .pnInfo{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     row-gap: 20px;
+
+}
+
+.pageNotFound .pnfLinks ul{
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+   text-align: center;
+   color: blue;
+   cursor: pointer;
+}
+
+/*-------------------------------- TopperCard --------------------------------*/
+
+.topperCard{
+    width: 300px;
+    height: 300px;
+}
+.topperCard img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+.topperCard img:hover{
+    transform: scale(1.1);
+}
+.topperCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*-------------------------------- longVideoClip -----------------------------------*/
+.LongVideoClips{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.longVideoClip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    height: 170px;
+   
+}
+.longVideoClip img {
+    position: absolute;
+    width:150px;
+
+}
+.longVideoClip video{
+    width: 100%;
+    height: 100%;
+}
+.gallary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imageCardClip{
+    width: 300px;
+    height: 170px;
+}
+.imageCardClip img{
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------------- GoogleMap--------------------------------------------*/
+.contactUs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:50px 30px;
+  
+}
+.map{
+    width: 40%;
+}
+.contactAddress{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    row-gap: 40px;
+}
+.contactAddress h1{
+    font-size: 25px;
+    font-weight: 900;
+}
+.contactAddress h2{
+    color:orangered;
+    font-size: 20px;
+    
+}
+.contactAddress h3{
+color: rgb(116, 116, 133);
+ font-size: 18px;
+}
+.contactAddress .SchoolAddress{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.contactAddress .phoneAndMail{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.googleMap{
+    width: 100%;
+}
+.googleMap iframe{
+    width: 100%;
+}
+
+/*----------------------------------- Gallary Event -------------------------------------*/
+
+.GallaryEvent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    padding: 20px 30px;
+    background-color: rgb(235, 241, 239);
+}
+.GallaryEvent .eventInfo{
+width: 50%;
+line-height: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+row-gap: 30px;
+padding: 50px;
+
+}
+.GallaryEvent .eventInfo p{
+font-size: 18px;
+text-align: justify;
+}
+
+.GallaryEvent .evenVideos{
+width: 50%;
+
+}
+.evenVideos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.moreVideos{
+    width: 300px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.moreVideos h3{
+    background-color: red;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+}
+.moreVideos h3:hover{
+    cursor: pointer;
+}
+
+
+
+
+/*------------------------------ addmissions ------------------------*/
+
+.addmissionsComp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 50px;
+    row-gap: 50px;
+}
+.addmissionsComp  .section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+
+   
+}
+.addmissionsComp .section h2{
+    margin-bottom: 20px;
+}
+.addmissionsComp .section ul{
+    list-style-type: none;
+}
+.addmissionsComp .title p{
+    width: 700px;
+
+}
+.addmissionsComp .special-sec{
+ background-color: darkslategray;
+ padding:20px 50px;
+ color: white;
+ border-radius: 10px;
+}
+.addmissionsComp .special-sec ul li{
+color:rgb(221, 221, 221);
+}
+.sectionParent{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.admission-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 50px 30px;
+ 
+}
+.admission-form .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+.admission-form .container .section input,.admission-form .container .section select,.admission-form .container .section textarea{
+    width: 250px;
+    height:40px;
+   padding: 10px 20px;
+   font-size: 15px;
+}
+.admission-form .container .section button{
+    width: 250px;
+    height: 50px;
+    margin: 30px 0px;
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s background-color;
+}
+.admission-form .container .section button:hover{
+    background-color: green;
+}
+.copyright{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    row-gap: 10px;
+    padding: 15px 0px;
+    color: rgb(76, 76, 94);
+    font-size: 16px;
+    column-gap: 10px;
+}
+.mobile-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    font-weight: 900;
+    background-color:rgb(0, 110, 92) ;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+      display: none;
+  
+}
+.nav .drop-down {
+    padding: 20px 0px;
+  
+}
+.nav .drop-down ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    row-gap: 25px;
+
+}
+.curriculam{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 100px;
+    background-color: rgb(255, 227, 227);
+    column-gap: 20px;
+}
+.curriculam p{
+    line-height:40px;
+    text-align: justify;
+}
+.curriculam h2,.curriculam h3{
+    margin-bottom:30px;
+}
+.curriculam h3{
+    margin-top: 30px;
+}
+.curriculam ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.futureTechnology ul{
+    margin-top: 20px ;
+}
+.futureTechnology ul{
+    list-style: circle;
+    margin-left:50px;
+}
+.lastParaCurriculam{
+    margin-top: 30px;
+}
+@media screen and (max-width:1100px){
+  
+    .ChairmanMessage{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding:50px;
+    }
+}
+@media screen and (max-width:900px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+    }
+    .GallaryEvent{
+    flex-direction: column;
+}
+.GallaryEvent h2{
+    align-items: start;
+}
+.GallaryEvent .eventInfo{
+width: 100%;
+}
+.GallaryEvent .evenVideos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addmissionsComp .title p{
+    width: 100%;
+}
+.addmissionsComp .sectionParent{
+    flex-direction: column;
+    row-gap: 30px;
+}
+.admission-form .container{
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width:800px){
+   .mobile-navigation{
+    display: flex;
+   }
+   .navication-section-c{
+        display: none;
+    }
+    .navivation-section-b .info-section{
+        display: none;
+    }
+    .ChairmanMessage{
+        row-gap: 30px;
+    }
+    .ChairmanMessage img{
+         width: 350px;
+         height: 350px;
+    }
+    .topperCard{
+    width: 200px;
+    height: 200px;
+}
+.contactUs{
+    width: 100%;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.contactUs .map{
+   width: 100%;
+}
+.ourSpecifications .specifications{
+    column-gap: 30px;
+    row-gap: 50px;
+    
+}
+.ourSpecifications .specifications .specification{
+    width: 200px;
+    height:200px;
+    font-size: 10px;
+}
+.specifications .specification .info{
+      line-height: 15px;
+    
+}
+
+
+}
+
+@media screen and (max-width:600px){
+   
+   .navivation-section-b{
+    padding:20px 10px;
+   }
+   .ourSpecifications{
+    padding: 0px;
+   }
+   .ourSpecifications .specifications .specification{
+    width: 300px;
+    height:200px;
+    font-size: 10px;
+}
+ .ChairmanMessage{
+    text-align: start;
+ }
+ .ChairmanMessage p{
+        row-gap: 30px;
+        text-align: justify;
+    }
+    .ChairmanMessage img{
+         width: 250px;
+         height: 250px;
+         
+    }
+    .keen-slider {
+  width: 100%;
+  height:250px;
+  overflow: hidden;
+}
+
+.slide-overlay {
+  bottom: 5%;
+  left: 10%;
+  padding: 10px 20px;
+  max-width: 70%;
+}
+.slide-overlay h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+
+}
+.slide-overlay p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.slide-overlay .buttons{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+     height: 50px;
+}
+
+.facultyProfiles .title{
+    padding: 20px 0px;
+}
+.facultyProfiles{
+    display: none;
+    padding:0px 10px;
+}
+.facultyProfiles .profiles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+    padding: 20px;
+    
+}
+.facultyProfiles .profiles .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0px 20px;
+   
+}
+.facultyProfiles .profiles .profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.ourSpecifications .title{
+    padding: 0px;
+}
+.footer{
+    padding: 30px 30px;
+    align-items: center;
+    justify-content: center;
+}
+.footer .details{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+ .copyright{
+    flex-direction: column;
+ } 
+ .AdmissionsNow{
+    padding: 0px 20px;
+    position: relative;
+    background-color: antiquewhite;
+ } 
+  .navigation-section-a{
+    height: 50px;
+  }
+ .navigation-section-a .social-media-icons{
+    display: none;
+    height: 0px;
+ }
+ .navigation-section-a{
+    background-color: rgb(0, 110, 92) ;
+    font-weight: 700;
+ }
+ .navivation-section-b{
+    padding: 20px 0px;
+ }
+  .navivation-section-b .logo-part img{
+    width:90px;
+    height: 90px;
+  }
+   .navivation-section-b .logo-part .logo-info h2{
+    font-size: 28px;
+   }
+    .navivation-section-b .logo-part .logo-info p{
+font-size: 22px;
+   }
+  
+    .GallaryEvent{
+    flex-direction: column;
+    padding: 0px;
+}
+.curriculam{
+    padding: 30px 30px;
+    background-color: rgb(233, 232, 255);
+    column-gap: 10px;
+}
+.curriculam h2{
+    text-align: justify;
+    font-size: 20px;
+}
+.curriculam p{
+    line-height:30px;
+    text-align: justify;
+    margin: 7px 0px;
+     color: rgb(116, 116, 133)
+}
+.curriculam h2,.curriculam h3{
+    margin-bottom:30px;
+}
+.curriculam h3{
+    margin-top: 30px;
+}
+.curriculam ul{
+    row-gap: 10px;
+}
+.curriculam ul li{
+    line-height: 30px;
+}
+.futureTechnology ul{
+    margin-top: 10px ;
+}
+.futureTechnology ul{
+    list-style: circle;
+    margin-left:30px;
+}
+.lastParaCurriculam{
+    margin-top: 30px;
+}
+
+}
+@media screen and (max-width:400px){
+   .topperCard{
+    width: 180px;
+    height:180px;
+   }
+  
+}
+
