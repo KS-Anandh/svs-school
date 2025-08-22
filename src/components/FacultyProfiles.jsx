@@ -58,8 +58,8 @@ const FacultyProfiles = () => {
           </div>
             <div className="profile">
             <img src={profileImg} alt="" />
-            <h4>Seetharam </h4>
-            <p>Physics</p>
+            <h4>Tamil Mani </h4>
+            <p>Spoken English</p>
           </div>
         </Marquee>
       </div>
