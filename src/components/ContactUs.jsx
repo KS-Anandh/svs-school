@@ -45,7 +45,7 @@ const ContactUs = ({ contactUsRef }) => {
           transition={{ duration: 1 }}
         >
           <h2>Contact Details</h2>
-          <h3> Admissions : +91 9676906525</h3>
+          <h3> Admissions :+91 9440162221</h3>
           <h3>General Inquiries : info@svsamadalavalasa.com</h3>
         </motion.div>
       </div>
