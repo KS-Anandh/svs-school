@@ -11,7 +11,7 @@ import { useInView } from "react-intersection-observer";
 
 const OurSpecifications = () => {
   const { ref, inView } = useInView({
-    threshold: 0.2, // 20% visible triggers animation
+    threshold: 0.1, // 20% visible triggers animation
     triggerOnce: true, // Animate only once
   });
 
@@ -103,7 +103,7 @@ const OurSpecifications = () => {
           </div>
         </motion.div>
         <motion.div
-          ref={ref}
+          // ref={ref}
           className="specification"
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
