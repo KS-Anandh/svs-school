@@ -396,7 +396,7 @@ font-size: 17px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    width: 350px;
+    width: 370px;
 }
 .footer .details ul{
     display: flex;
