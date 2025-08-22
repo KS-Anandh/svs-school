@@ -25,7 +25,7 @@ const ContactUs = ({ contactUsRef }) => {
 
         <motion.div
           className="SchoolAddress"
-          ref={ref}
+          // ref={ref}
           initial={{ opacity: 0, x: 50 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1 }}
@@ -39,7 +39,7 @@ const ContactUs = ({ contactUsRef }) => {
 
         <motion.div
           className="phoneAndMail"
-          ref={ref}
+          // ref={ref}
           initial={{ opacity: 0, x: -50 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1 }}

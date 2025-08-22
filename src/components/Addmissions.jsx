@@ -27,7 +27,7 @@ const Addmissions = () => {
       </motion.div>
       <div className="sectionParent">
         <motion.div
-          ref={ref}
+          // ref={ref}
           className="section special-sec"
           initial={{ opacity: 0, x: -50 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -43,7 +43,7 @@ const Addmissions = () => {
         </motion.div>
 
         <motion.div
-          ref={ref}
+          // ref={ref}
           className="section special-sec"
           initial={{ opacity: 0, x: 50 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}

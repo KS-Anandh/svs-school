@@ -10,9 +10,9 @@ const Curriculam = () => {
 
   return (
     <div className="curriculam">
-      <h2>Our Complete Curriculum – Academic Excellence Meets Future Skills</h2>
+      <h2  >Our Complete Curriculum – Academic Excellence Meets Future Skills</h2>
      <motion.div
-          ref={ref}
+         ref={ref}
           initial={{ opacity: 0, y: -50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1 }}
@@ -42,7 +42,7 @@ const Curriculam = () => {
       </p>
 </motion.div>
   <motion.div
-          ref={ref}
+         
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1 }}
