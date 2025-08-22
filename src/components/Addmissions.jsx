@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 const Addmissions = () => {
   const { ref, inView } = useInView({
-    threshold: 0.3, // 20% visible triggers animation
+    threshold: 0.1, // 20% visible triggers animation
     triggerOnce: true, // Animate only once
   });
 
