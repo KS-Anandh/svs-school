@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='details'>
             <div className="svsSchoolStart">
             <img src={startImg} alt="" />
-            <h3 ><span style={{color:"yellow",fontWeight:"bold",fontSize:"25px"}}> SVS School </span> Approved By AP </h3>
+            <h3 ><span style={{color:"yellow",fontWeight:"bold",fontSize:"25px"}}> SVS School </span>Recognized By AP </h3>
             </div>
             <h4><span style={{color:"orangered",fontWeight:"bolder"}}> Education</span> is the most powerful tool to shape the future.</h4>
             <h3>REGISTERED ADDRESS</h3>
