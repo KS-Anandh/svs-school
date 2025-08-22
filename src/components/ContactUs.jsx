@@ -46,7 +46,7 @@ const ContactUs = ({ contactUsRef }) => {
         >
           <h2>Contact Details</h2>
           <h3> Admissions :+91 9440162221</h3>
-          <h3>General Inquiries : info@svsamadalavalasa.com</h3>
+          <h3>General Inquiries : svsschool@gmail.com</h3>
         </motion.div>
       </div>
     </div>
